@@ -16,7 +16,6 @@ describe('TodoDataService', () => {
   }));
 
   describe('#getAllTodos()', () => {
-
     it('should return an empty array by default', inject([TodoDataService], (service: TodoDataService) => {
       expect(service.getAllTodos()).toEqual([]);
     }));
@@ -32,7 +31,6 @@ describe('TodoDataService', () => {
   });
 
   describe('#save(todo)', () => {
-
     it('should automatically assign an incrementing id', inject([TodoDataService], (service: TodoDataService) => {
       let todo1 = new Todo({title: 'Hello 1', complete: false});
       let todo2 = new Todo({title: 'Hello 2', complete: true});
@@ -45,7 +43,6 @@ describe('TodoDataService', () => {
   });
 
   describe('#deleteTodoById(id)', () => {
-
     it('should remove todo with the corresponding id', inject([TodoDataService], (service: TodoDataService) => {
       let todo1 = new Todo({title: 'Hello 1', complete: false});
       let todo2 = new Todo({title: 'Hello 2', complete: true});
@@ -71,7 +68,6 @@ describe('TodoDataService', () => {
   });
 
   describe('#updateTodoById(id, values)', () => {
-
     it('should return todo with the corresponding id and updated data', inject([TodoDataService], (service: TodoDataService) => {
       let todo = new Todo({title: 'Hello 1', complete: false});
       service.addTodo(todo);
@@ -93,7 +89,6 @@ describe('TodoDataService', () => {
   });
 
   describe('#toggleTodoComplete(todo)', () => {
-
     it('should return the updated todo with inverse complete status', inject([TodoDataService], (service: TodoDataService) => {
       let todo = new Todo({title: 'Hello 1', complete: false});
       service.addTodo(todo);

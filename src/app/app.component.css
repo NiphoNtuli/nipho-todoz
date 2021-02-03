@@ -1,0 +1,23 @@
+.todoapp {
+    margin: auto;
+    width: 50%;
+    border: 3px solid grey;
+    text-align: center;
+    padding: 10px;
+}
+.header {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.main {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+.footer {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
